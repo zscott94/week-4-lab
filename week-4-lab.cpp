@@ -26,12 +26,13 @@ int main() {
   --------------------------------*/
 
   cout <<  "What's your name? " << endl;
+  cin.ignore(numeric_limits<streamsize>::max(), '\n');
   getline (cin,mystr);
   cout <<  "Hello " << mystr << endl;
   cout <<  "How old are you? " << endl;
   getline (cin,mystr);
-  cout << "So you're " << mystr << ", I'm currently 24 years old";
-  cout << "Are you happy with your life right now? ";
+  cout << "So you're " << mystr << ", I'm currently 24 years old" << endl;
+  cout << "Are you happy with your life right now? " << endl;
   getline (cin,mystr);
   cout << "You said " << mystr << " to being happy with your life." << endl;
   cout << "If you said no, try and change up something in your routine. " << endl;
